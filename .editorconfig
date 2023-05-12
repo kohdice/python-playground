@@ -11,11 +11,6 @@ trim_trailing_whitespace = true
 [*.py]
 max_line_length = 79
 
-# The JSON files contain newlines inconsistently
-[*.json]
-insert_final_newline = ignore
-indent_size = 2
-
 [*.{yml,yaml}]
 indent_size = 2
 
