@@ -1,0 +1,28 @@
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: /
+    target-branch: develop
+    schedule:
+      interval: weekly
+      day: friday
+      time: 21:00
+      timezone: Asia/Tokyo
+    assignees:
+      - kohdice
+    commit-message:
+      prefix: pip
+    versioning-strategy: lockfile-only
+
+  - package-ecosystem: docker
+    directory: /
+    target-branch: develop
+    schedule:
+      interval: weekly
+      day: friday
+      time: 21:00
+      timezone: Asia/Tokyo
+    assignees:
+      - kohdice
+    commit-message:
+      prefix: docker
